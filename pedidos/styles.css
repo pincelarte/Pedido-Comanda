@@ -1,0 +1,43 @@
+
+body{
+    background-color: white;
+}
+
+.container{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 30%;
+    padding: 0;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    color: #5ca53a;
+}
+
+#datos{
+    padding: 10px;
+    border: 1px solid black;
+    
+}
+
+#pedido{
+    padding: 10px;
+    border: 1px solid #080808;
+}
+
+#pagos{
+    padding: 10px;
+    border: 1px solid #0a0a0a;
+}
+button{
+    background-color: #5ca53a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

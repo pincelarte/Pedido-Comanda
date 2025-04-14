@@ -1,0 +1,107 @@
+body {
+    background-color: #f8faf9;
+    min-height: 100vh;
+    padding: 60px 20px;
+    box-sizing: border-box;
+}
+
+
+
+.hero{
+    background-image:linear-gradient(to bottom, rgba(255,255,255,0.7), rgba(255,255,255,0)), url("fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 60vw;        
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial, sans-serif';
+    font-size: 16px;
+    color: rgb(92, 91, 91);
+}
+h1, h3{
+    color: #111111;
+    text-align: center;
+}
+
+label{
+    color: #111111;
+}
+input{
+    width: 50%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #858282;
+    border-radius: 5px;
+    color: rgb(95, 94, 94);
+}
+
+select{
+    background-color: transparent;
+    width: 50%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #858282;
+    border-radius: 5px;
+    color: rgb(158, 158, 158);
+}
+
+fieldset{
+    border: 1px solid #858282;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    color: rgb(44, 44, 44);
+    margin-bottom: 30px;
+}
+
+#Pedido{    
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial, sans-serif';
+    font-size: 25px;
+    color: rgb(31, 31, 30);
+    border: solid 3px #1a1919;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+#Pedido:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* color de fondo leve al pasar el ratón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* sombra más fuerte al pasar el ratón */
+}
+
+/* Efecto cuando el botón es presionado (efecto de hundimiento) */
+#Pedido:active {
+    transform: translateY(2px); /* el botón se mueve hacia abajo cuando se presiona */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* sombra más suave cuando se presiona */
+}
+
+.salsas label {
+  margin: 20px;  
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+select[name="retiro"] {
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1rem;
+    background-color:transparent;
+    color: #333;
+    margin-bottom: 300px;
+}
+
+label[for="retiro"] {
+    font-weight: bold;
+    color: #555;
+}
+

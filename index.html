@@ -1,0 +1,98 @@
+    <!-- 
+    En base a un contexto real, realiza un formulario que posea al menos estos componentes:
+    form
+    ○ inputs (text, number, password, date, picker, etc. )
+    ○ textarea
+    ○ checkbox
+    ○ radiobuttons
+    ○ select → option
+    Submit
+    -->
+
+
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Empanadas</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="hero">
+
+            <h1>Rellenos de Colores</h1>
+            <form action="./pedidos/comanda.html">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="inputNombre" required><br><br>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="inputTelefono" required><br><br>
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="inputDireccion" required><br><br>
+
+                <label for="fecha">Entrega:</label>
+                <input type="datetime-local" id="fecha" name="inputFechaHora" required><br><br>
+
+                <label for="observaciones">Observaciones:</label><br>
+                <textarea id="observaciones" name="inputObservaciones"></textarea><br><br>
+            
+
+                <h3>Nuestros Sabores</h3><br>
+                
+                <label for="cantidad">Carne:</label>
+                <input type="number" id="carne" name="cantidadCarne" min="1" max="100" ><br>
+                <label for="cantidad">Pollo: </label>
+                <input type="number" id="pollo" name="cantidadPollo" min="1" max="100" ><br>
+                <label for="cantidad">J y Q: </label>
+                <input type="number" id="JyQ" name="cantidadJyQ" min="1" max="100" ><br><br>
+
+
+                <label for="sabor">Combos</label>
+                <select name="combo">
+                    <option value="ninguno">Sin combo</option>
+                    <option value="combo1">12 empanadas + bebida $16000</option>
+                    <option value="combo2">20 empanadas + 2 salsas $20000</option>
+                </select>
+                <br><br>
+
+
+                <label>Nuestras Salsas</label><br>
+                <div class="salsas">
+                    <label><input type="checkbox" name="inputSalsaAgridulce"> Salsa Agridulce</label>
+                    <label><input type="checkbox" name="inputSalsaPicante"> Salsa Picante</label>
+                </div>
+
+
+                <fieldset>
+                    <legend>Método de Pago:</legend>
+                    <input type="radio" id="efectivo" name="pago" value="efectivo" required>
+                    <label for="efectivo">Efectivo</label><br>
+                    <input type="radio" id="tarjeta_credito" name="pago" value="tarjeta_credito">
+                    <label for="tarjeta_credito">Tarjeta de Crédito</label><br>
+                    <input type="radio" id="transferencia" name="pago" value="transferencia">
+                    <label for="transferencia">Transferencia Bancaria</label><br>
+                </fieldset><br>
+
+                <label for="retiro">Retiro</label>
+                <select name="retiro" required>
+                    <option value="" disabled selected hidden>Seleccione una opción</option>
+                    <option value="Reservarle Mesa">Consume en las instalaciones</option>
+                    <option value="Envío a Domicilio">Envío a Domicilio</option>
+                    <option value="Retira en el local">Retiro en el local</option>
+                </select>
+                <br><br>
+
+
+                <input type="submit" id="Pedido" value="Realizar Pedido">
+            </form>
+        </div>
+        
+    </body>
+
+    </html>
