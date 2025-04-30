@@ -50,3 +50,29 @@ searchParams.forEach((value, key) => {
         pagosDiv.innerHTML += `<p><strong>${displayName}:</strong> ${value}</p>`;
     }
 });
+
+
+
+
+window.addEventListener('DOMContentLoaded', () => {
+    const boton = document.querySelector('button');
+    const ringtone = document.getElementById('ringtone');
+
+    // Agrega la clase de animación
+    boton.classList.add('boton-vibrando');
+
+    // Reproduce el sonido
+    ringtone.play().catch((e) => {
+        console.warn('Interacción del usuario requerida para reproducir audio');
+    });
+
+    boton.addEventListener('click', () => {
+        // Detener sonido y animación
+        ringtone.pause();
+        ringtone.currentTime = 0;
+        boton.classList.remove('boton-vibrando');
+
+        // Aquí puedes poner la lógica de imprimir, si quieres
+        window.print();
+    });
+});
